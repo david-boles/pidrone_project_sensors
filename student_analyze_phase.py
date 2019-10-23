@@ -76,7 +76,6 @@ class AnalyzePhase(picamera.array.PiMotionAnalysis):
 
                 # if the first image was visible (the transformation was succesful and transform_first is not None) :
                     # calculate the x,y, and yaw from the transformation
-                    # update first image data
                 # else the first image was not visible (transform_first was None) :
                     # try to estimate the transformation from the previous image
                     transform_previous = cv2.estimateRigidTransform(self.previous_image, image, False)
